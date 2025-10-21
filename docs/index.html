@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Samvel Badalyan</title>
+    <meta name="description" content="Portfolio of Samvel Badalyan" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E%F0%9F%8C%9F%3C/text%3E%3C/svg%3E" />
+    <style>
+      :root { color-scheme: light dark; --bg: #0b0c10; --fg: #eaf0f1; --accent: #61dafb; --muted: #9aa0a6; }
+      * { box-sizing: border-box; }
+      html, body { height: 100%; margin: 0; }
+      body { background: var(--bg); color: var(--fg); font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; display: grid; place-items: center; padding: 2rem; }
+      main { width: min(960px, 100%); display: grid; gap: 1.25rem; }
+      header { display: flex; align-items: center; gap: 1rem; }
+      .avatar { width: 64px; height: 64px; border-radius: 50%; border: 2px solid var(--accent); background: radial-gradient(circle at 30% 30%, #2b2d42, #1b1d2a); }
+      h1 { margin: 0; font-size: 1.75rem; }
+      p { margin: 0; color: var(--muted); }
+      section { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 1rem; }
+      a { color: var(--accent); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      ul { padding-left: 1.25rem; margin: 0.5rem 0 0; }
+      footer { color: var(--muted); font-size: 0.9rem; text-align: center; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="avatar" aria-hidden="true"></div>
+        <div>
+          <h1>Samvel Badalyan</h1>
+          <p>Software Developer • Building things on the web</p>
+        </div>
+      </header>
+
+      <section>
+        <strong>Links</strong>
+        <ul>
+          <li><a href="https://github.com/Samvel-coder" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="mailto:badalyan.samvel@example.com">Email</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <strong>Projects</strong>
+        <ul>
+          <li><a href="https://github.com/Samvel-coder" target="_blank" rel="noopener">Explore my repositories</a></li>
+        </ul>
+      </section>
+
+      <footer>
+        <span>&copy; <span id="year"></span> Samvel Badalyan. All rights reserved.</span>
+      </footer>
+    </main>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
